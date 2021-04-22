@@ -19,9 +19,6 @@ let package = Package(
             name: "STPopup",
             dependencies: [],
             path: "Sources",
-            cSettings: [
-                .headerSearchPath("Internal"),
-            ],
             publicHeadersPath: "include"
         ),
 
