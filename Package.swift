@@ -10,21 +10,16 @@ let package = Package(
     products: [
         .library(
             name: "STPopup",
-            targets: ["STPopup-iOS", "SwiftSTPopup"]
+            targets: ["STPopup"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "STPopup-iOS",
+            name: "STPopup",
             dependencies: [],
             publicHeadersPath: "include"
         ),
-        .target(
-            name: "SwiftSTPopup",
-            dependencies: ["STPopup-iOS"],
-            path: "Sources/Swift"
-        )
 
     ]
 )

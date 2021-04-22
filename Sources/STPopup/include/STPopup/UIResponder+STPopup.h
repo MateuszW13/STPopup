@@ -6,11 +6,7 @@
 //  Copyright (c) 2015 Sth4Me. All rights reserved.
 //
 
-#if SWIFT_PACKAGE
-#import <UIKit.h>
-#else
 #import <UIKit/UIKit.h>
-#endif
 
 FOUNDATION_EXPORT NSString *const STPopupFirstResponderDidChangeNotification;
 
