@@ -6,13 +6,8 @@
 //  Copyright (c) 2015 Sth4Me. All rights reserved.
 //
 
-#if SWIFT_PACKAGE
-#import <UIKit.h>
-#import <STPopupNavigationBar.h>
-#else
 #import <UIKit/UIKit.h>
 #import <STPopup/STPopupNavigationBar.h>
-#endif
 
 
 NS_ASSUME_NONNULL_BEGIN

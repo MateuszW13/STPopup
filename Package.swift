@@ -18,6 +18,10 @@ let package = Package(
         .target(
             name: "STPopup",
             dependencies: [],
+            path: "Sources",
+            cSettings: [
+                    .headerSearchPath("include"),
+                  ],
             publicHeadersPath: "include"
         ),
 
