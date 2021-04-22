@@ -6,7 +6,11 @@
 //  Copyright © 2016 Sth4Me. All rights reserved.
 //
 
+#if SWIFT_PACKAGE
+#import <STPopupController.h>
+#else
 #import <STPopup/STPopupController.h>
+#endif
 
 @interface STPopupControllerTransitioningSlideVertical : NSObject <STPopupControllerTransitioning>
 
