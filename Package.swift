@@ -23,6 +23,7 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("STPopup"),
                 .headerSearchPath("STPopup/Private"),
+                .headerSearchPath("STPopup/Public"),
                 ]
         ),
 
