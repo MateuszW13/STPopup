@@ -5,10 +5,7 @@ import PackageDescription
 let package = Package(
     name: "STPopup",
     platforms: [
-        .iOS(.v9),
-        .tvOS(.v9),
-        .watchOS(.v2),
-        .macOS(.v10_10)
+        .iOS(.v9)
     ],
     products: [
         .library(
@@ -21,12 +18,11 @@ let package = Package(
         .target(
             name: "STPopup",
             dependencies: [],
-            path: "Sources"
+            path: "Sources",
+            cSettings: [
+                .headerSearchPath("Internal"),
+            ]
         ),
-        .testTarget(
-            name: "STPopupTests",
-            dependencies: ["STPopup"],
-            path: "Tests"
-        ),
+
     ]
 )
