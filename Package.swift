@@ -18,7 +18,7 @@ let package = Package(
         .target(
             name: "STPopup",
             dependencies: [],
-            publicHeadersPath: "include"
+            publicHeadersPath: "STPopup/include/STPopup"
         ),
 
     ]

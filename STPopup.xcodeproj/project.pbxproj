@@ -306,9 +306,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3D9C428F22745894000A6585 /* STPopup-iOS */ = {
+		3D9C428F22745894000A6585 /* STPopup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D9C429822745894000A6585 /* Build configuration list for PBXNativeTarget "STPopup-iOS" */;
+			buildConfigurationList = 3D9C429822745894000A6585 /* Build configuration list for PBXNativeTarget "STPopup" */;
 			buildPhases = (
 				3D9C428B22745894000A6585 /* Headers */,
 				3D9C428C22745894000A6585 /* Sources */,
@@ -319,7 +319,7 @@
 			);
 			dependencies = (
 			);
-			name = "STPopup-iOS";
+			name = STPopup;
 			productName = STPopup;
 			productReference = 3D9C429022745894000A6585 /* STPopup.framework */;
 			productType = "com.apple.product-type.framework";
@@ -418,7 +418,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D9C428F22745894000A6585 /* STPopup-iOS */,
+				3D9C428F22745894000A6585 /* STPopup */,
 				3D9C42F02274604A000A6585 /* STPopup-iOSTests */,
 				3D9C43202274629B000A6585 /* Example */,
 				51D92A0A263197E100CD9FDC /* STSwiftPopupTests */,
@@ -503,12 +503,12 @@
 /* Begin PBXTargetDependency section */
 		3D9C42F82274604A000A6585 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D9C428F22745894000A6585 /* STPopup-iOS */;
+			target = 3D9C428F22745894000A6585 /* STPopup */;
 			targetProxy = 3D9C42F72274604A000A6585 /* PBXContainerItemProxy */;
 		};
 		3D9C433722746323000A6585 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D9C428F22745894000A6585 /* STPopup-iOS */;
+			target = 3D9C428F22745894000A6585 /* STPopup */;
 			targetProxy = 3D9C433622746323000A6585 /* PBXContainerItemProxy */;
 		};
 		51D92A10263197E100CD9FDC /* PBXTargetDependency */ = {
@@ -845,7 +845,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D9C429822745894000A6585 /* Build configuration list for PBXNativeTarget "STPopup-iOS" */ = {
+		3D9C429822745894000A6585 /* Build configuration list for PBXNativeTarget "STPopup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D9C429922745894000A6585 /* Debug */,
