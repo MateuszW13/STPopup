@@ -29,6 +29,12 @@
 		51D929A72631888200CD9FDC /* UIViewController+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D9299F2631888200CD9FDC /* UIViewController+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D929A82631888200CD9FDC /* STPopupLeftBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D929A02631888200CD9FDC /* STPopupLeftBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D929A92631888200CD9FDC /* STPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D929A12631888200CD9FDC /* STPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D92A0C263197E100CD9FDC /* STSwiftPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D92A03263197E100CD9FDC /* STSwiftPopup.framework */; };
+		51D92A13263197E100CD9FDC /* STSwiftPopupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D92A12263197E100CD9FDC /* STSwiftPopupTests.swift */; };
+		51D92A15263197E100CD9FDC /* STSwiftPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92A05263197E100CD9FDC /* STSwiftPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D92A18263197E100CD9FDC /* STSwiftPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D92A03263197E100CD9FDC /* STSwiftPopup.framework */; };
+		51D92A19263197E100CD9FDC /* STSwiftPopup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 51D92A03263197E100CD9FDC /* STSwiftPopup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		51D92A24263197FB00CD9FDC /* STSwiftPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D929FA2631978300CD9FDC /* STSwiftPopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,27 @@
 			remoteGlobalIDString = 3D9C428F22745894000A6585;
 			remoteInfo = "STPopup-iOS";
 		};
+		51D92A0D263197E100CD9FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9C428722745894000A6585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D92A02263197E100CD9FDC;
+			remoteInfo = STSwiftPopup;
+		};
+		51D92A0F263197E100CD9FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9C428722745894000A6585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9C43202274629B000A6585;
+			remoteInfo = Example;
+		};
+		51D92A16263197E100CD9FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9C428722745894000A6585 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51D92A02263197E100CD9FDC;
+			remoteInfo = STSwiftPopup;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +82,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				51D92A19263197E100CD9FDC /* STSwiftPopup.framework in Embed Frameworks */,
 				3D9C433522746323000A6585 /* STPopup.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -100,6 +128,13 @@
 		51D9299F2631888200CD9FDC /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
 		51D929A02631888200CD9FDC /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
 		51D929A12631888200CD9FDC /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
+		51D929FA2631978300CD9FDC /* STSwiftPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSwiftPopup.swift; sourceTree = "<group>"; };
+		51D92A03263197E100CD9FDC /* STSwiftPopup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STSwiftPopup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D92A05263197E100CD9FDC /* STSwiftPopup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSwiftPopup.h; sourceTree = "<group>"; };
+		51D92A06263197E100CD9FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51D92A0B263197E100CD9FDC /* STSwiftPopupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STSwiftPopupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		51D92A12263197E100CD9FDC /* STSwiftPopupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSwiftPopupTests.swift; sourceTree = "<group>"; };
+		51D92A14263197E100CD9FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +157,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D92A18263197E100CD9FDC /* STSwiftPopup.framework in Frameworks */,
 				3D9C433422746323000A6585 /* STPopup.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D92A00263197E100CD9FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D92A08263197E100CD9FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D92A0C263197E100CD9FDC /* STSwiftPopup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +187,8 @@
 				3D9C42A32274595F000A6585 /* Tests */,
 				3D9C43222274629B000A6585 /* Example */,
 				3D9C429B227458E8000A6585 /* Configs */,
+				51D92A04263197E100CD9FDC /* STSwiftPopup */,
+				51D92A11263197E100CD9FDC /* STSwiftPopupTests */,
 				3D9C429122745894000A6585 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -151,6 +204,8 @@
 				3D9C43012274611B000A6585 /* STPopup-tvOSTests.xctest */,
 				3D9C431122746198000A6585 /* STPopup-macOSTests.xctest */,
 				3D9C43212274629B000A6585 /* Example.app */,
+				51D92A03263197E100CD9FDC /* STSwiftPopup.framework */,
+				51D92A0B263197E100CD9FDC /* STSwiftPopupTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,6 +229,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				51D929F7263196D800CD9FDC /* Swift */,
 				51D929C82631907400CD9FDC /* STPopup */,
 			);
 			path = Sources;
@@ -244,6 +300,32 @@
 			path = STPopup;
 			sourceTree = "<group>";
 		};
+		51D929F7263196D800CD9FDC /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				51D929FA2631978300CD9FDC /* STSwiftPopup.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		51D92A04263197E100CD9FDC /* STSwiftPopup */ = {
+			isa = PBXGroup;
+			children = (
+				51D92A05263197E100CD9FDC /* STSwiftPopup.h */,
+				51D92A06263197E100CD9FDC /* Info.plist */,
+			);
+			path = STSwiftPopup;
+			sourceTree = "<group>";
+		};
+		51D92A11263197E100CD9FDC /* STSwiftPopupTests */ = {
+			isa = PBXGroup;
+			children = (
+				51D92A12263197E100CD9FDC /* STSwiftPopupTests.swift */,
+				51D92A14263197E100CD9FDC /* Info.plist */,
+			);
+			path = STSwiftPopupTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -259,6 +341,14 @@
 				51D929A52631888200CD9FDC /* STPopupControllerTransitioningSlideVertical.h in Headers */,
 				51D929A42631888200CD9FDC /* STPopupNavigationBar.h in Headers */,
 				51D929A82631888200CD9FDC /* STPopupLeftBarItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D929FE263197E100CD9FDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D92A15263197E100CD9FDC /* STSwiftPopup.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +404,49 @@
 			);
 			dependencies = (
 				3D9C433722746323000A6585 /* PBXTargetDependency */,
+				51D92A17263197E100CD9FDC /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
 			productReference = 3D9C43212274629B000A6585 /* Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		51D92A02263197E100CD9FDC /* STSwiftPopup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51D92A1A263197E100CD9FDC /* Build configuration list for PBXNativeTarget "STSwiftPopup" */;
+			buildPhases = (
+				51D929FE263197E100CD9FDC /* Headers */,
+				51D929FF263197E100CD9FDC /* Sources */,
+				51D92A00263197E100CD9FDC /* Frameworks */,
+				51D92A01263197E100CD9FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STSwiftPopup;
+			productName = STSwiftPopup;
+			productReference = 51D92A03263197E100CD9FDC /* STSwiftPopup.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51D92A0A263197E100CD9FDC /* STSwiftPopupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51D92A1D263197E100CD9FDC /* Build configuration list for PBXNativeTarget "STSwiftPopupTests" */;
+			buildPhases = (
+				51D92A07263197E100CD9FDC /* Sources */,
+				51D92A08263197E100CD9FDC /* Frameworks */,
+				51D92A09263197E100CD9FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				51D92A0E263197E100CD9FDC /* PBXTargetDependency */,
+				51D92A10263197E100CD9FDC /* PBXTargetDependency */,
+			);
+			name = STSwiftPopupTests;
+			productName = STSwiftPopupTests;
+			productReference = 51D92A0B263197E100CD9FDC /* STSwiftPopupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -326,19 +454,26 @@
 		3D9C428722745894000A6585 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1020;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Core Logic";
 				TargetAttributes = {
 					3D9C428F22745894000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1240;
 					};
 					3D9C42F02274604A000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					3D9C43202274629B000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					51D92A02263197E100CD9FDC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					51D92A0A263197E100CD9FDC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 3D9C43202274629B000A6585;
 					};
 				};
 			};
@@ -358,6 +493,8 @@
 				3D9C428F22745894000A6585 /* STPopup-iOS */,
 				3D9C42F02274604A000A6585 /* STPopup-iOSTests */,
 				3D9C43202274629B000A6585 /* Example */,
+				51D92A02263197E100CD9FDC /* STSwiftPopup */,
+				51D92A0A263197E100CD9FDC /* STSwiftPopupTests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,6 +520,20 @@
 			files = (
 				3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */,
 				3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D92A01263197E100CD9FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D92A09263197E100CD9FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +570,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		51D929FF263197E100CD9FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D92A24263197FB00CD9FDC /* STSwiftPopup.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51D92A07263197E100CD9FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D92A13263197E100CD9FDC /* STSwiftPopupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -431,6 +598,21 @@
 			isa = PBXTargetDependency;
 			target = 3D9C428F22745894000A6585 /* STPopup-iOS */;
 			targetProxy = 3D9C433622746323000A6585 /* PBXContainerItemProxy */;
+		};
+		51D92A0E263197E100CD9FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51D92A02263197E100CD9FDC /* STSwiftPopup */;
+			targetProxy = 51D92A0D263197E100CD9FDC /* PBXContainerItemProxy */;
+		};
+		51D92A10263197E100CD9FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9C43202274629B000A6585 /* Example */;
+			targetProxy = 51D92A0F263197E100CD9FDC /* PBXContainerItemProxy */;
+		};
+		51D92A17263197E100CD9FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 51D92A02263197E100CD9FDC /* STSwiftPopup */;
+			targetProxy = 51D92A16263197E100CD9FDC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -672,6 +854,7 @@
 		3D9C43312274629C000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -692,6 +875,7 @@
 		3D9C43322274629C000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
@@ -706,6 +890,100 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51D92A1B263197E100CD9FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = STSwiftPopup/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.corelogic.STSwiftPopup;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		51D92A1C263197E100CD9FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = STSwiftPopup/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.corelogic.STSwiftPopup;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		51D92A1E263197E100CD9FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV96J67M3P;
+				INFOPLIST_FILE = STSwiftPopupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.corelogic.STSwiftPopupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		51D92A1F263197E100CD9FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HV96J67M3P;
+				INFOPLIST_FILE = STSwiftPopupTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.corelogic.STSwiftPopupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -744,6 +1022,24 @@
 			buildConfigurations = (
 				3D9C43312274629C000A6585 /* Debug */,
 				3D9C43322274629C000A6585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51D92A1A263197E100CD9FDC /* Build configuration list for PBXNativeTarget "STSwiftPopup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51D92A1B263197E100CD9FDC /* Debug */,
+				51D92A1C263197E100CD9FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51D92A1D263197E100CD9FDC /* Build configuration list for PBXNativeTarget "STSwiftPopupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51D92A1E263197E100CD9FDC /* Debug */,
+				51D92A1F263197E100CD9FDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

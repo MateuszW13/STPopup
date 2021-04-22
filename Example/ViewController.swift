@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import STPopup
+import STSwiftPopup
 
 // MARK: - ViewController
 
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
-        
+        STPopupController(rootViewController: self)
     }
     
     /// LoadView
