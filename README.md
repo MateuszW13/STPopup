@@ -1,260 +1,108 @@
-# STPopup ![CI Status](https://img.shields.io/travis/kevin0571/STPopup.svg?style=flat) ![Version](http://img.shields.io/cocoapods/v/STPopup.svg?style=flag) ![License](https://img.shields.io/cocoapods/l/STPopup.svg?style=flag)
-`STPopup` provides `STPopupController`, which works just like `UINavigationController` in popup style, for both iPhone and iPad. It's written in Objective-C and compatible with Swift.
+<p align="center">
+   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="STPopup Logo">
+</p>
 
-**Features:**
-- Push/Pop view controller into/out of `STPopupController` just like `UINavigationController`.
-- Set navigation items through `self.navigationItem` just like using a `UINavigationController`.
-- Support both "Form Sheet" and "Bottom Sheet" style.
-- Work well with storyboard(including segue).
-- Customize UI by using `UIAppearance`.
-- Customizable popup transition style.
-- Auto-reposition of popup view when keyboard shows up, make sure your `UITextField`/`UITextView` won't be covered by the keyboard.
-- Drag navigation bar to dismiss popup view.
-- Support both portrait and landscape orientation in iPhone and iPad.
-- iOS 7+.
-- Compatible with Swift.
+<p align="center">
+   <a href="https://developer.apple.com/swift/">
+      <img src="https://img.shields.io/badge/Swift-5.2-orange.svg?style=flat" alt="Swift 5.2">
+   </a>
+   <a href="http://cocoapods.org/pods/STPopup">
+      <img src="https://img.shields.io/cocoapods/v/STPopup.svg?style=flat" alt="Version">
+   </a>
+   <a href="http://cocoapods.org/pods/STPopup">
+      <img src="https://img.shields.io/cocoapods/p/STPopup.svg?style=flat" alt="Platform">
+   </a>
+   <a href="https://github.com/Carthage/Carthage">
+      <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
+   </a>
+   <a href="https://github.com/apple/swift-package-manager">
+      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
+   </a>
+</p>
 
-## Use Cases
-![Use Cases](https://user-images.githubusercontent.com/1491282/57985696-b6e01300-7a63-11e9-91a9-b5aa55262967.jpg)
+# STPopup
 
-## Get Started
-**CocoaPods**
-```ruby
+<p align="center">
+ℹ️ Short description of STPopup
+</p>
+
+## Features
+
+- [x] ℹ️ Add STPopup features
+
+## Example
+
+The example application is the best way to see `STPopup` in action. Simply open the `STPopup.xcodeproj` and run the `Example` scheme.
+
+## Installation
+
+### CocoaPods
+
+STPopup is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```bash
 pod 'STPopup'
 ```
-**Carthage**
-```ruby
-github "kevin0571/STPopup"
+
+### Carthage
+
+[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
+
+To integrate STPopup into your Xcode project using Carthage, specify it in your `Cartfile`:
+
+```ogdl
+github "MateuszW13/STPopup"
 ```
-  
-**Import header file**  
-Objective-C
-```objc
-#import <STPopup/STPopup.h>
-```
-Swift
+
+Run `carthage update` to build the framework and drag the built `STPopup.framework` into your Xcode project. 
+
+On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase” and add the Framework path as mentioned in [Carthage Getting started Step 4, 5 and 6](https://github.com/Carthage/Carthage/blob/master/README.md#if-youre-building-for-ios-tvos-or-watchos)
+
+### Swift Package Manager
+
+To integrate using Apple's [Swift Package Manager](https://swift.org/package-manager/), add the following as a dependency to your `Package.swift`:
+
 ```swift
-import STPopup
-```
-
-**Initialize and present STPopupController**  
-Objective-C
-```objc
-STPopupController *popupController = [[STPopupController alloc] initWithRootViewController:viewController];
-[popupController presentInViewController:self];
-```
-Swift
-```swift
-let popupController = let popupController = STPopupController(rootViewController: viewController)
-popupController.present(in: self)
-```
-
-**Set content size in view controller**  
-Objective-C
-```objc
-@implementation ViewController
-
-- (instancetype)init
-{
-    if (self = [super init]) {
-        self.title = @"View Controller";
-        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Next" style:UIBarButtonItemStylePlain target:self action:@selector(nextBtnDidTap)];
-        // It's required to set content size of popup.
-        self.contentSizeInPopup = CGSizeMake(300, 400);
-        self.landscapeContentSizeInPopup = CGSizeMake(400, 200);
-    }
-    return self;
-}
-
-@end
-```
-Swift
-```swift
-class ViewController: UIViewController {
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        title = "View Controller"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextBtnDidTap))
-        // It's required to set content size of popup.
-        contentSizeInPopup = CGSize(width: 300, height: 400)
-        landscapeContentSizeInPopup = CGSize(width: 400, height: 200)
-    }
-}
-```
-**Set content size of view controller which is loaded from Storyboard**  
-Set content size in storyboard or in `awakeFromNib`.  
-![Storyboard](https://user-images.githubusercontent.com/1491282/57982394-dca5f180-7a3c-11e9-8d63-3ca6c3837860.png)
-
-**Push, pop and dismiss view controllers**  
-Objective-C
-```objc
-[self.popupController pushViewController:[ViewController new] animated:YES];
-[self.popupController popViewControllerAnimated:YES]; // Popup will be dismissed if there is only one view controller in the popup view controller stack
-[self.popupController dismiss];
-```
-Swift
-```swift
-popupController?.push(viewController, animated: true)
-popupController?.popViewController(animated: true) // Popup will be dismissed if there is only one view controller in the popup view controller stack
-popupController?.dismiss()
-```
-
-![Push & Pop](https://cloud.githubusercontent.com/assets/1491282/9857915/0d4ab3ee-5b50-11e5-81bc-8fbae3ad8c06.gif)
-
-**Bottom sheet style**  
-Objective-C
-```objc
-STPopupController *popupController = [[STPopupController alloc] initWithRootViewController:[ViewController new]];
-popupController.style = STPopupStyleBottomSheet;
-[popupController presentInViewController:self];
-```
-Swift
-```swift
-let popupController = STPopupController(rootViewController: viewController)
-popupController.style = .bottomSheet
-popupController.present(in: self)
-```
-![Bottom Sheet](https://cloud.githubusercontent.com/assets/1491282/10417963/7649f356-7080-11e5-8f3c-0cb817b8353e.gif)
-
-**Customize popup transition style**  
-Objective-C
-```objc
-#pragma mark - STPopupControllerTransitioning
-
-- (NSTimeInterval)popupControllerTransitionDuration:(STPopupControllerTransitioningContext *)context
-{
-    return context.action == STPopupControllerTransitioningActionPresent ? 0.5 : 0.35;
-}
-
-- (void)popupControllerAnimateTransition:(STPopupControllerTransitioningContext *)context completion:(void (^)())completion
-{
-    // Popup will be presented with an animation sliding from right to left.
-    UIView *containerView = context.containerView;
-    if (context.action == STPopupControllerTransitioningActionPresent) {
-        containerView.transform = CGAffineTransformMakeTranslation(containerView.superview.bounds.size.width - containerView.frame.origin.x, 0);
-        
-        [UIView animateWithDuration:[self popupControllerTransitionDuration:context] delay:0 usingSpringWithDamping:1 initialSpringVelocity:1 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-            context.containerView.transform = CGAffineTransformIdentity;
-        } completion:^(BOOL finished) {
-            completion();
-        }];
-    }
-    else {
-        [UIView animateWithDuration:[self popupControllerTransitionDuration:context] delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-            containerView.transform = CGAffineTransformMakeTranslation(- 2 * (containerView.superview.bounds.size.width - containerView.frame.origin.x), 0);
-        } completion:^(BOOL finished) {
-            containerView.transform = CGAffineTransformIdentity;
-            completion();
-        }];
-    }
-}
-
-// Use custom transitioning in popup controller
-STPopupController *popupController = [[STPopupController alloc] initWithRootViewController:viewController];
-popupController.transitionStyle = STPopupTransitionStyleCustom;
-popupController.transitioning = self;
-[popupController presentInViewController:self];
-```
-Swift
-```swift
-// MARK: STPopupControllerTransitioning
-
-func popupControllerTransitionDuration(_ context: STPopupControllerTransitioningContext) -> TimeInterval {
-    return context.action == .present ? 0.5 : 0.35
-}
-
-func popupControllerAnimateTransition(_ context: STPopupControllerTransitioningContext, completion: @escaping () -> Void) {
-    // Popup will be presented with an animation sliding from right to left.
-    let containerView = context.containerView
-    if context.action == .present {
-        containerView.transform = CGAffineTransform(translationX: containerView.superview!.bounds.size.width - containerView.frame.origin.x, y: 0)
-        UIView.animate(withDuration: popupControllerTransitionDuration(context), delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
-            containerView.transform = .identity
-        }, completion: { _ in
-            completion()
-        });
-    } else {
-        UIView.animate(withDuration: popupControllerTransitionDuration(context), delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut, animations: {
-            containerView.transform = CGAffineTransform(translationX: -2 * (containerView.superview!.bounds.size.width - containerView.frame.origin.x), y: 0)
-        }, completion: { _ in
-            containerView.transform = .identity
-            completion()
-        });
-    }
-}
-
-// Use custom transitioning in popup controller
-let popupController = let popupController = STPopupController(rootViewController: viewController)
-popupController.transitionStyle = .custom
-popupController.transitioning = self
-popupController.present(in: self)
-```
-
-**Blur background**  
-Objective-C
-```objc
-STPopupController *popupController = [[STPopupController alloc] initWithRootViewController:[PopupViewController1 new]];
-if (NSClassFromString(@"UIBlurEffect")) {
-    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-    popupController.backgroundView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-}
-```
-Swift
-```swift
-let popupController = let popupController = STPopupController(rootViewController: viewController)
-if NSClassFromString("UIBlurEffect") != nil {
-    let blurEffect = UIBlurEffect(style: .dark)
-    popupController.backgroundView = UIVisualEffectView(effect: blurEffect)
-}
-```
-
-**Action of tapping on area outside of popup**  
-Objective-C
-```objc
-[popupController.backgroundView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundViewDidTap)]];
-```
-Swift
-```swift
-popupController.backgroundView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backgroundViewDidTap)))
-```
-
-**Customize UI**  
-Objective-C
-```objc
-[STPopupNavigationBar appearance].barTintColor = [UIColor colorWithRed:0.20 green:0.60 blue:0.86 alpha:1.0];
-[STPopupNavigationBar appearance].tintColor = [UIColor whiteColor];
-[STPopupNavigationBar appearance].barStyle = UIBarStyleDefault;
-[STPopupNavigationBar appearance].titleTextAttributes = @{ NSFontAttributeName: [UIFont fontWithName:@"Cochin" size:18], NSForegroundColorAttributeName: [UIColor whiteColor] };
-    
-[[UIBarButtonItem appearanceWhenContainedIn:[STPopupNavigationBar class], nil] setTitleTextAttributes:@{ NSFontAttributeName:[UIFont fontWithName:@"Cochin" size:17] } forState:UIControlStateNormal];
-```
-Swift
-```swift
-STPopupNavigationBar.appearance().barTintColor = UIColor(red: 0.2, green: 0.6, blue: 0.86, alpha: 1)
-STPopupNavigationBar.appearance().tintColor = .white
-STPopupNavigationBar.appearance().barStyle = .default
-STPopupNavigationBar.appearance().titleTextAttributes = [
-    .font: UIFont(name: "Cochin", size: 18) ?? .systemFont(ofSize: 18),
-    .foregroundColor: UIColor.white,
+dependencies: [
+    .package(url: "https://github.com/MateuszW13/STPopup.git.git", from: "1.0.0")
 ]
-UIBarButtonItem
-    .appearance(whenContainedInInstancesOf: [STPopupNavigationBar.self])
-    .setTitleTextAttributes([
-        .font: UIFont(name: "Cochin", size: 18) ?? .systemFont(ofSize: 18),
-        ], for: .normal)
 ```
-![Customize UI](https://cloud.githubusercontent.com/assets/1491282/9911306/0f6db056-5cd4-11e5-9329-33b0cf02e1b0.png)
 
-**Auto-reposition when keyboard is showing up**  
-This is default behavior.  
-![Auto-reposition](https://cloud.githubusercontent.com/assets/1491282/9858277/5b29b130-5b52-11e5-9569-7560a0853493.gif)
+Alternatively navigate to your Xcode project, select `Swift Packages` and click the `+` icon to search for `STPopup`.
 
-**Drag to dismiss**  
-This is default behavior.  
-![Drag to dismiss](https://cloud.githubusercontent.com/assets/1491282/9858334/b103fc96-5b52-11e5-9c3f-517367ed9386.gif)
+### Manually
 
-**Handle orientation change**  
-This is default behavior.  
-![Orientation change](https://cloud.githubusercontent.com/assets/1491282/9858372/e6538880-5b52-11e5-8882-8705588606ba.gif)
+If you prefer not to use any of the aforementioned dependency managers, you can integrate STPopup into your project manually. Simply drag the `Sources` Folder into your Xcode project.
 
-Please checkout the example project for more details.
+## Usage
+
+ℹ️ Describe the usage of your Kit
+
+## Contributing
+Contributions are very welcome 🙌
+
+## License
+
+```
+STPopup
+Copyright (c) 2021 Core Logic ios_ml@corelogic.pl
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+```

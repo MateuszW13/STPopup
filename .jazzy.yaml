@@ -1,0 +1,7 @@
+# STPopup document generator jazzy settings
+
+copyright: Copyright 2021 Core Logic
+author: Core Logic
+xcodebuild_arguments: [-target, STPopup-iOS]
+clean: true
+output: ./Documentation
