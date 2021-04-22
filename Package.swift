@@ -18,7 +18,6 @@ let package = Package(
         .target(
             name: "STPopup",
             dependencies: [],
-            path: "Sources",
             publicHeadersPath: "include"
         ),
 
