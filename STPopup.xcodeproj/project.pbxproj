@@ -14,21 +14,21 @@
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* STPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* STPopup.framework */; };
 		3D9C433522746323000A6585 /* STPopup.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* STPopup.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		51D928F52631777800CD9FDC /* STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928E62631777600CD9FDC /* STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D928F62631777800CD9FDC /* STPopupNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928E72631777600CD9FDC /* STPopupNavigationBar.m */; };
 		51D928F72631777800CD9FDC /* STPopupLeftBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928E82631777600CD9FDC /* STPopupLeftBarItem.m */; };
-		51D928F82631777800CD9FDC /* UIResponder+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928E92631777700CD9FDC /* UIResponder+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51D928F92631777800CD9FDC /* STPopupControllerTransitioningFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928EA2631777700CD9FDC /* STPopupControllerTransitioningFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D928FA2631777800CD9FDC /* STPopupControllerTransitioningFade.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928EB2631777700CD9FDC /* STPopupControllerTransitioningFade.m */; };
 		51D928FB2631777800CD9FDC /* STPopupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928EC2631777700CD9FDC /* STPopupController.m */; };
-		51D928FC2631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928ED2631777700CD9FDC /* STPopupControllerTransitioningSlideVertical.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51D928FD2631777800CD9FDC /* UIViewController+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928EE2631777700CD9FDC /* UIViewController+STPopup.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D928FE2631777800CD9FDC /* UIResponder+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928EF2631777700CD9FDC /* UIResponder+STPopup.m */; };
 		51D928FF2631777800CD9FDC /* UIViewController+STPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928F02631777700CD9FDC /* UIViewController+STPopup.m */; };
-		51D929002631777800CD9FDC /* STPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928F12631777700CD9FDC /* STPopupController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51D929012631777800CD9FDC /* STPopupLeftBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928F22631777700CD9FDC /* STPopupLeftBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		51D929022631777800CD9FDC /* STPopupNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D928F32631777700CD9FDC /* STPopupNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51D929032631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D928F42631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.m */; };
+		51D92936263184DF00CD9FDC /* STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D9292E263184DF00CD9FDC /* STPopup.h */; };
+		51D92937263184DF00CD9FDC /* UIResponder+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D9292F263184DF00CD9FDC /* UIResponder+STPopup.h */; };
+		51D92938263184DF00CD9FDC /* STPopupNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92930263184DF00CD9FDC /* STPopupNavigationBar.h */; };
+		51D92939263184DF00CD9FDC /* STPopupControllerTransitioningSlideVertical.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92931263184DF00CD9FDC /* STPopupControllerTransitioningSlideVertical.h */; };
+		51D9293A263184DF00CD9FDC /* STPopupControllerTransitioningFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92932263184DF00CD9FDC /* STPopupControllerTransitioningFade.h */; };
+		51D9293B263184DF00CD9FDC /* UIViewController+STPopup.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92933263184DF00CD9FDC /* UIViewController+STPopup.h */; };
+		51D9293C263184DF00CD9FDC /* STPopupLeftBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92934263184DF00CD9FDC /* STPopupLeftBarItem.h */; };
+		51D9293D263184DF00CD9FDC /* STPopupController.h in Headers */ = {isa = PBXBuildFile; fileRef = 51D92935263184DF00CD9FDC /* STPopupController.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,21 +85,21 @@
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51D928E62631777600CD9FDC /* STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
 		51D928E72631777600CD9FDC /* STPopupNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupNavigationBar.m; sourceTree = "<group>"; };
 		51D928E82631777600CD9FDC /* STPopupLeftBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupLeftBarItem.m; sourceTree = "<group>"; };
-		51D928E92631777700CD9FDC /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
-		51D928EA2631777700CD9FDC /* STPopupControllerTransitioningFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningFade.h; sourceTree = "<group>"; };
 		51D928EB2631777700CD9FDC /* STPopupControllerTransitioningFade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupControllerTransitioningFade.m; sourceTree = "<group>"; };
 		51D928EC2631777700CD9FDC /* STPopupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupController.m; sourceTree = "<group>"; };
-		51D928ED2631777700CD9FDC /* STPopupControllerTransitioningSlideVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningSlideVertical.h; sourceTree = "<group>"; };
-		51D928EE2631777700CD9FDC /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
 		51D928EF2631777700CD9FDC /* UIResponder+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+STPopup.m"; sourceTree = "<group>"; };
 		51D928F02631777700CD9FDC /* UIViewController+STPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+STPopup.m"; sourceTree = "<group>"; };
-		51D928F12631777700CD9FDC /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
-		51D928F22631777700CD9FDC /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
-		51D928F32631777700CD9FDC /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
 		51D928F42631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPopupControllerTransitioningSlideVertical.m; sourceTree = "<group>"; };
+		51D9292E263184DF00CD9FDC /* STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopup.h; sourceTree = "<group>"; };
+		51D9292F263184DF00CD9FDC /* UIResponder+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+STPopup.h"; sourceTree = "<group>"; };
+		51D92930263184DF00CD9FDC /* STPopupNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupNavigationBar.h; sourceTree = "<group>"; };
+		51D92931263184DF00CD9FDC /* STPopupControllerTransitioningSlideVertical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningSlideVertical.h; sourceTree = "<group>"; };
+		51D92932263184DF00CD9FDC /* STPopupControllerTransitioningFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupControllerTransitioningFade.h; sourceTree = "<group>"; };
+		51D92933263184DF00CD9FDC /* UIViewController+STPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+STPopup.h"; sourceTree = "<group>"; };
+		51D92934263184DF00CD9FDC /* STPopupLeftBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupLeftBarItem.h; sourceTree = "<group>"; };
+		51D92935263184DF00CD9FDC /* STPopupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPopupController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				51D9292A2631838000CD9FDC /* Public Headers */,
+				51D9292D263184DF00CD9FDC /* include */,
 				51D928EC2631777700CD9FDC /* STPopupController.m */,
 				51D928EB2631777700CD9FDC /* STPopupControllerTransitioningFade.m */,
 				51D928F42631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.m */,
@@ -213,19 +213,19 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		51D9292A2631838000CD9FDC /* Public Headers */ = {
+		51D9292D263184DF00CD9FDC /* include */ = {
 			isa = PBXGroup;
 			children = (
-				51D928E62631777600CD9FDC /* STPopup.h */,
-				51D928F12631777700CD9FDC /* STPopupController.h */,
-				51D928EA2631777700CD9FDC /* STPopupControllerTransitioningFade.h */,
-				51D928ED2631777700CD9FDC /* STPopupControllerTransitioningSlideVertical.h */,
-				51D928F22631777700CD9FDC /* STPopupLeftBarItem.h */,
-				51D928F32631777700CD9FDC /* STPopupNavigationBar.h */,
-				51D928E92631777700CD9FDC /* UIResponder+STPopup.h */,
-				51D928EE2631777700CD9FDC /* UIViewController+STPopup.h */,
+				51D9292E263184DF00CD9FDC /* STPopup.h */,
+				51D9292F263184DF00CD9FDC /* UIResponder+STPopup.h */,
+				51D92930263184DF00CD9FDC /* STPopupNavigationBar.h */,
+				51D92931263184DF00CD9FDC /* STPopupControllerTransitioningSlideVertical.h */,
+				51D92932263184DF00CD9FDC /* STPopupControllerTransitioningFade.h */,
+				51D92933263184DF00CD9FDC /* UIViewController+STPopup.h */,
+				51D92934263184DF00CD9FDC /* STPopupLeftBarItem.h */,
+				51D92935263184DF00CD9FDC /* STPopupController.h */,
 			);
-			path = "Public Headers";
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,14 +235,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D928FD2631777800CD9FDC /* UIViewController+STPopup.h in Headers */,
-				51D928F92631777800CD9FDC /* STPopupControllerTransitioningFade.h in Headers */,
-				51D929002631777800CD9FDC /* STPopupController.h in Headers */,
-				51D928F52631777800CD9FDC /* STPopup.h in Headers */,
-				51D929022631777800CD9FDC /* STPopupNavigationBar.h in Headers */,
-				51D928FC2631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.h in Headers */,
-				51D928F82631777800CD9FDC /* UIResponder+STPopup.h in Headers */,
-				51D929012631777800CD9FDC /* STPopupLeftBarItem.h in Headers */,
+				51D9293D263184DF00CD9FDC /* STPopupController.h in Headers */,
+				51D92936263184DF00CD9FDC /* STPopup.h in Headers */,
+				51D9293B263184DF00CD9FDC /* UIViewController+STPopup.h in Headers */,
+				51D9293A263184DF00CD9FDC /* STPopupControllerTransitioningFade.h in Headers */,
+				51D92937263184DF00CD9FDC /* UIResponder+STPopup.h in Headers */,
+				51D92939263184DF00CD9FDC /* STPopupControllerTransitioningSlideVertical.h in Headers */,
+				51D92938263184DF00CD9FDC /* STPopupNavigationBar.h in Headers */,
+				51D9293C263184DF00CD9FDC /* STPopupLeftBarItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
