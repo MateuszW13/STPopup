@@ -75,7 +75,6 @@
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3D9C42D622745C9D000A6585 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
 		3D9C42D822745DAF000A6585 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
-		3D9C42D922745DAF000A6585 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		3D9C42DB22745DB0000A6585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
 		3D9C42F12274604A000A6585 /* STPopup-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STPopup-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43012274611B000A6585 /* STPopup-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STPopup-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,7 +167,6 @@
 				3D9C42D522745B48000A6585 /* README.md */,
 				3D9C42DB22745DB0000A6585 /* .gitignore */,
 				3D9C42D822745DAF000A6585 /* .jazzy.yaml */,
-				3D9C42D922745DAF000A6585 /* .swiftlint.yml */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -176,20 +174,13 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				51D928E62631777600CD9FDC /* STPopup.h */,
-				51D928F12631777700CD9FDC /* STPopupController.h */,
+				51D9292A2631838000CD9FDC /* Public Headers */,
 				51D928EC2631777700CD9FDC /* STPopupController.m */,
-				51D928EA2631777700CD9FDC /* STPopupControllerTransitioningFade.h */,
 				51D928EB2631777700CD9FDC /* STPopupControllerTransitioningFade.m */,
-				51D928ED2631777700CD9FDC /* STPopupControllerTransitioningSlideVertical.h */,
 				51D928F42631777800CD9FDC /* STPopupControllerTransitioningSlideVertical.m */,
-				51D928F22631777700CD9FDC /* STPopupLeftBarItem.h */,
 				51D928E82631777600CD9FDC /* STPopupLeftBarItem.m */,
-				51D928F32631777700CD9FDC /* STPopupNavigationBar.h */,
 				51D928E72631777600CD9FDC /* STPopupNavigationBar.m */,
-				51D928E92631777700CD9FDC /* UIResponder+STPopup.h */,
 				51D928EF2631777700CD9FDC /* UIResponder+STPopup.m */,
-				51D928EE2631777700CD9FDC /* UIViewController+STPopup.h */,
 				51D928F02631777700CD9FDC /* UIViewController+STPopup.m */,
 			);
 			path = Sources;
@@ -220,6 +211,21 @@
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		51D9292A2631838000CD9FDC /* Public Headers */ = {
+			isa = PBXGroup;
+			children = (
+				51D928E62631777600CD9FDC /* STPopup.h */,
+				51D928F12631777700CD9FDC /* STPopupController.h */,
+				51D928EA2631777700CD9FDC /* STPopupControllerTransitioningFade.h */,
+				51D928ED2631777700CD9FDC /* STPopupControllerTransitioningSlideVertical.h */,
+				51D928F22631777700CD9FDC /* STPopupLeftBarItem.h */,
+				51D928F32631777700CD9FDC /* STPopupNavigationBar.h */,
+				51D928E92631777700CD9FDC /* UIResponder+STPopup.h */,
+				51D928EE2631777700CD9FDC /* UIViewController+STPopup.h */,
+			);
+			path = "Public Headers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

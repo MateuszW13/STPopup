@@ -21,7 +21,8 @@ let package = Package(
             path: "Sources",
             cSettings: [
                 .headerSearchPath("Internal"),
-            ]
+            ],
+            publicHeadersPath: "include"
         ),
 
     ]
